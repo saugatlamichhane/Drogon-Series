@@ -10,7 +10,7 @@ using namespace drogon_model::mydb;   // <-- adjust "mydb" to your real database
 namespace api {
 namespace v1 {
 
-    User::User():dbClient(drogon::app().getDbClient("default")) {
+    User::User() {
         LOG_DEBUG << "User controller initialized!";
     }
 
@@ -38,7 +38,8 @@ namespace v1 {
     void User::newUser(const drogon::HttpRequestPtr& req,
                        std::function<void(const drogon::HttpResponsePtr&)>&& callback,
                        std::string&& userName) {
-        auto mp = drogon::orm::Mapper<Users> (dbClient);
+        auto client = drogon::app().getDbClient();
+        auto mp = drogon::orm::Mapper<Users> (client);
 
         Users newUser;
         newUser.setUsername(userName);

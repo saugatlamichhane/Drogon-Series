@@ -34,8 +34,6 @@ namespace v1
                         int userId);
 
         User();
-    private:
-        drogon::orm::DbClientPtr dbClient;
     };
 }
 }
