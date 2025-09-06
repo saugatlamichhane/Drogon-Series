@@ -45,15 +45,15 @@
             //filename: Sqlite3 db file name
             //"filename":"",
             //host: Server address,localhost by default
-            "host": "127.0.0.1",
+            "host": "dpg-d2tsuvogjchc73bmpneg-a.oregon-postgres.render.com",
             //port: Server port, 5432 by default
             "port": 5432,
             //dbname: Database name
-            "dbname": "mydb",
+            "dbname": "mydb_ieiy",
             //user: 'postgres' by default
             "user": "myuser",
             //passwd: '' by default
-            "passwd": "mypassword",
+            "passwd": "YEL39JaStvwgQFChV9kwwb2uFTeS8HwB",
             //is_fast: false by default, if it is true, the client is faster but user can't call
             //any synchronous interface of it.
             "is_fast": false, 

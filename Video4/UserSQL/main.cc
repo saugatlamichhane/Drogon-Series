@@ -83,7 +83,7 @@ void setupCors()
 
 int main() {
     // Load config file (must contain DB credentials)
-    app().loadConfigFile("../config.json");
+    app().loadConfigFile("config.json");
     setupCors();
     // Set listener (optional, for HTTP APIs later)
     app().addListener("0.0.0.0", 5555);
