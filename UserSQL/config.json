@@ -49,9 +49,9 @@
             //port: Server port, 5432 by default
             "port": 5432,
             //dbname: Database name
-            "dbname": "mydb2",
+            "dbname": "mydb",
             //user: 'postgres' by default
-            "user": "myuser2",
+            "user": "myuser",
             //passwd: '' by default
             "passwd": "mypassword",
             //is_fast: false by default, if it is true, the client is faster but user can't call
